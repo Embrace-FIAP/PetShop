@@ -29,6 +29,8 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+/* Menu de navegação */
+
 .cabecalho {
     padding: 1% 0% 0.5% 7%;
     animation: fade-down 0.5s;
@@ -86,6 +88,8 @@ body::-webkit-scrollbar {
     width: 50px;
     height: 50px;
 }
+
+/* Página HOME */
 
 .legenda {
     position: absolute;
@@ -154,6 +158,16 @@ body::-webkit-scrollbar {
     color: var(--cor-primaria);
 }
 
+.botaoAdote {
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    display: inline-flex;
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
 main {
     width: 100%;
     height: 100%;
@@ -164,6 +178,7 @@ main {
     padding-left: 40%;
     animation: fade 5s;
     animation-iteration-count: infinite;
+    filter: drop-shadow(var(--cor-sombra) 0px 10px 1px);
 }
 
 #home {
@@ -197,7 +212,7 @@ main {
     padding-inline: 30px;
     background-color: var(--cor-sombra);
     border: 1px solid var(--cor-primaria);
-    filter: drop-shadow(var(--cor-sombra) 0px 5px 7px);
+    filter: drop-shadow(var(--cor-sombra) 10px 10px 7px);
 }
 
 #veterinario {
@@ -213,7 +228,7 @@ main {
     padding-inline: 30px;
     background-color: var(--cor-sombra);
     border: 1px solid var(--cor-primaria);
-    filter: drop-shadow(var(--cor-sombra) 0px 5px 7px);
+    filter: drop-shadow(var(--cor-sombra) 10px 10px 7px);
 }
 
 #produto {
@@ -230,11 +245,29 @@ main {
     padding-inline-end: 10px;
     background-color: var(--cor-sombra);
     border: 1px solid var(--cor-primaria);
-    filter: drop-shadow(var(--cor-sombra) 0px 5px 7px);
+    filter: drop-shadow(var(--cor-sombra) 10px 10px 7px);
 }
 
+#imgAdote {
+    width: 35%;
+    margin-left: 7%;
+    margin-right: 9%;
+    background-color: var(--cor-sombra);
+    border: 1px solid var(--cor-primaria);
+    filter: drop-shadow(var(--cor-sombra) 10px 10px 7px);
+}
+
+#adote {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20vh;
+}
+
+/* Página PETS */
+
 .titulo {
-    padding-left: 32%;
+    display: flex;
+    justify-content: center;
     margin-bottom: 5%;
     font-family: var(--fonte-primaria);
     font-weight: 700;
@@ -360,6 +393,46 @@ main {
     background: var(--cor-secundaria);
 }
 
+.legendaAdote {
+    margin-left: 9%;
+    margin-top: 2%;
+}
+
+.legendaAdote h1 {
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    font-size: 32px;
+    filter: drop-shadow(var(--cor-sombra) 0px 5px 1px);
+}
+
+.legendaAdote p {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+    font-weight: 500;
+    font-size: 20px;
+    padding-right: 0;
+    filter: drop-shadow(var(--cor-sombra) 0px 3px 1px);
+}
+
+.legendaAdote button {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-primaria);
+    font-weight: 700;
+    font-size: 24px;
+    border: none;
+    background: var(--cor-botao);
+    padding: 10px;
+    padding-bottom: 10px;
+    padding-inline: 36px;
+    border-radius: 12px;
+    cursor: pointer;
+    filter: drop-shadow(var(--cor-sombra) 0px 5px 7px);
+}
+
+.legendaAdote button:hover {
+    background: var(--cor-secundaria);
+}
+
 @keyframes fade-down {
     0% {
         opacity: 0;
@@ -395,6 +468,144 @@ main {
         transform: translateY(0px) scale(1);
     }
 }
+
+/* Página Produtos */
+#produtos {
+    margin-top: 7%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: fade-up 1s;
+}
+
+.itens {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20%;
+}
+
+.legendaItens {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5%;
+}
+
+.legendaItens h1 {
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    font-size: 32px;
+    filter: drop-shadow(var(--cor-sombra) 0px 5px 1px);
+}
+
+.legendaItens p {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+    font-weight: 500;
+    font-size: 16px;
+    filter: drop-shadow(var(--cor-sombra) 0px 3px 1px);
+    padding-top: 1%;
+}
+
+.legendaItens p:hover {
+    cursor: pointer;
+    border-bottom: 1px solid var(--cor-secundaria);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    background-color: var(--cor-primaria);
+    margin-top: 40px;
+    border-radius: 25px;
+    text-align: center;
+    filter: drop-shadow(var(--cor-sombra) 10px 10px 2px);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: 0.5s;
+}
+
+.card:hover {
+    filter: drop-shadow(var(--cor-sombra) 20px 20px 5px);
+    height: 350px;
+}
+
+.card .imgbox {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    top: 20px;
+    transition: 0.5s;
+}
+
+.card:hover .imgbox {
+    top: -100px;
+    scale: 0.75;
+}
+
+.card .imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(var(--cor-sombra) 0px 1px 3px);
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: var(--cor-botao);
+    font-family: var(--fonte-primaria);
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0px 30px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.content p {
+    margin-inline: 20px;
+}
+
+.card:hover .content {
+    top: 130px;
+    height: 250px;
+    visibility: visible;
+}
+
+.content button {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-primaria);
+    font-size: 20px;
+    border: none;
+    background: var(--cor-botao);
+    margin-top: 15%;
+    margin-inline: 15%;
+    padding-block: 5px;
+    padding-inline: 0;
+    border-radius: 12px;
+    cursor: pointer;
+    filter: drop-shadow(var(--cor-sombra) 0px 1px 3px);
+}
+
+.card button:hover {
+    filter: drop-shadow(var(--cor-sombra) 0px 1px 5px);
+}
+
+/* Rodapé */
 
 .rodape {
     height: 20px;
