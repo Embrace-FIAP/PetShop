@@ -12,25 +12,76 @@
     <header class="cabecalho">
         <nav class="cabecalho__menu">
                 <div class="logo"><img src="./src/assets/iconebuddy.png">BUDDY</div>
-                <a class="cabecalho__menu__link__atual" href="index.html">HOME</a>
-                <a class="cabecalho__menu__link" href="pets.html">PETS</a>
-                <a class="cabecalho__menu__link" href="produtos.html">PRODUTOS</a>
-                <a class="cabecalho__menu__link" href="sobre.html">SOBRE</a>
-                <a class="cabecalho__menu__link" href="contato.html">CONTATO</a>
+                <a class="cabecalho__menu__link__atual" href="#home">HOME</a>
+                <a class="cabecalho__menu__link" href="#pets">PETS</a>
+                <a class="cabecalho__menu__link" href="#produtos">PRODUTOS</a>
+                <a class="cabecalho__menu__link" href="#sobre">SOBRE</a>
+                <a class="cabecalho__menu__link" href="#contato">CONTATO</a>
         </nav>
     </header>
 
     <div class="linha"></div>
 
-    <main id="slideshow">
+    <main id="home">
         <img id="imgSlide">
         <div class="legenda">
             <h1>CUIDE DO SEU PET</h1>
             <p>Qualidade e cuidado para <br> seu melhor amigo.</p>
             <br>
-            <button><a class="botao" href="pets.html">PETS</a></button>
+            <button><a class="botaoPets" href="#pets">PETS</a></button>
         </div>
     </main>
+
+    <div class="linha"></div>
+
+    <section id="pets">
+        <h1 class="titulo">NOSSOS SERVIÇOS</h1>
+        <section id="banho">
+            <img src="./src/assets/banhoetosaEd.png" id="imgBanho">
+            <div class="legendaBanho">
+                <h1>BANHO E TOSA</h1>
+                <p>
+                    O banho e tosa é um dos serviços mais importantes para manter a saúde e 
+                    a higiene dos animais de estimação. É por isso que, em nosso petshop, 
+                    oferecemos um serviço de banho e tosa completo e personalizado, que atende 
+                    às necessidades de cada animal.
+                </p>
+                <br>
+                <button><a class="botaoContato" href="#contato">AGENDE AQUI</a></button>
+            </div>
+        </section>
+
+        <section id="veterinario">
+            <div class="legendaVeterinario">
+                <h1>VETERINÁRIO</h1>
+                <p>
+                    Nossos veterinários estão sempre prontos para oferecer o melhor 
+                    atendimento e cuidado para o seu pet. Contamos com uma estrutura 
+                    completa e profissionais capacitados.
+                </p>
+                <br>
+                <button><a class="botaoContato" href="#contato">AGENDE AQUI</a></button>
+            </div>
+            <img src="./src/assets/veterinarioEd.png" id="imgVeterinario">
+        </section>
+
+        <section id="produto">
+            <img src="./src/assets/produto4.png" id="imgProduto">
+            <div class="legendaProduto">
+                <h1>PRODUTOS</h1>
+                <p>
+                    A relação entre tutor e animal de estimação é transformadora e única, 
+                    envolvendo muita conexão emocional. Pensando em deixar esse laço 
+                    ainda melhor, o Pet Shop Buddy oferece produtos das principais 
+                    marcas do mercado. Toda essa variedade é pensada para que os tutores 
+                    não tenham que sair de casa para encontrar aquilo que precisam no 
+                    dia a dia.
+                </p>
+                <br>
+                <button><a class="botaoContato" href="#produtos">PRODUTOS</a></button>
+            </div>
+        </section>
+    </section>
 
     <footer class="rodape">
         <h5>@2024 - Todos os direitos reservados.</h5>
