@@ -1,4 +1,4 @@
-let imagens = ['../src/assets/cachorro1Ed.png', '../src/assets/gato1Ed.png'];
+let imagens = ['../src/assets/cachorro1Ed.png', '../src/assets/gato1Ed.png', '../src/assets/cachorro2Ed.png', '../src/assets/gato2Ed.png'];
 let index = 0;
 let time = 5000;
 
