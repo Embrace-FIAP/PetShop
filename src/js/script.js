@@ -14,3 +14,10 @@ function slideShow() {
 }
 
 slideShow();
+
+document.addEventListener("DOMContentLoaded", () => {
+    const homeUrl = '#cabecalho';  // Defina aqui a URL da sua página home
+    if (window.location.pathname !== homeUrl) {
+      window.location.href = homeUrl;  // Redireciona para a home
+    }
+});
