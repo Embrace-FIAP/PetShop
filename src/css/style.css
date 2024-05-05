@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap');
+
+:root {
+    --cor-fundo: #6C8C94;
+    --cor-primaria: #F2F2EF;
+    --cor-secundaria: #D6D6CC;
+    --cor-botao: #A7A7A1;
+
+    --fonte-primaria: 'Kameron', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+}
+
+.cabecalho {
+    padding: 1% 0% 0.5% 7%;
+    animation: fade-down 0.5s;
+}
+
+.cabecalho__menu {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    color: var(--cor-primaria);
+}
+
+.cabecalho__menu__link:hover {
+    border-bottom: 1px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho__menu__link__atual {
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    color: var(--cor-secundaria);
+}
+
+.cabecalho__menu__link__atual:hover {
+    border-bottom: 1px solid var(--cor-secundaria);
+}
+
+.linha {
+    margin: 0% 3% 0% 3%;
+    border-bottom: 1px solid #D6D6CC;
+    animation: fade-down 1s;
+}
+
+.logo {
+    display: flex;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.slideshow {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: fade-up 1s;
+}
+
+.legenda {
+    position: absolute;
+    left: 9%;
+    bottom: 30%;
+}
+
+.legenda h1 {
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+/* .legenda h1::before {
+    content: "CUIDE DO SEU PET";
+    animation: h1 infinite 10s;
+} */
+
+.legenda p {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.legenda button {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-primaria);
+    font-weight: 700;
+    font-size: 24px;
+    border: none;
+    background: var(--cor-botao);
+    padding: 10px;
+    padding-bottom: 10px;
+    padding-inline: 36px;
+    border-radius: 12px;
+    cursor: pointer;
+    filter: drop-shadow(#5D7582 0px 5px 7px);
+}
+
+.legenda button:hover {
+    background: var(--cor-secundaria);
+}
+
+.botao {
+    font-family: var(--fonte-primaria);
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    display: inline-flex;
+    color: var(--cor-primaria);
+}
+
+#imgSlide {
+    width: 50%;
+    padding-left: 40%;
+    animation: fade 5s;
+    animation-iteration-count: infinite;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translate(-30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translate(30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+        transform: translate(30px) scale(0.9);
+    }
+
+    10%, 90% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+.rodape {
+    height: 20px;
+    text-align: center;
+}
+
+.rodape h5 {
+    font-family: var(--fonte-primaria);
+    background: var(--cor-botao);
+    font-size: 16px;
+    padding: 20px;
+}
